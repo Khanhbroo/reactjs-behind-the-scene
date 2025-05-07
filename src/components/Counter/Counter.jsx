@@ -56,4 +56,4 @@ const Counter = ({ initialCount }) => {
   );
 };
 
-export default memo(Counter);
+export default Counter;
