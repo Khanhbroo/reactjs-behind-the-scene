@@ -32,6 +32,11 @@ const Counter = ({ initialCount }) => {
     [initialCount]
   );
 
+  // This method is not optimal
+  // useEffect(() => {
+  //   setCounterChanges([{ value: initialCount, id: Math.random() * 1000 }]);
+  // }, [initialCount]);
+
   // const [counter, setCounter] = useState(initialCount);
   const [counterChanges, setCounterChanges] = useState([
     { value: initialCount, id: Math.random() * 1000 },
